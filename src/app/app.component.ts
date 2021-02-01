@@ -14,6 +14,14 @@ export class AppComponent {
   porcentaje: number = 0.357;
   salary:number = 1230.87;
 
+  valuePromise = new Promise<string>((resolve) => {
+
+    setTimeout(() => {
+      resolve('llego la información');
+    }, 4500);
+  })
+
+
   album = {
     author: 'King Crimson',
     name: 'In the court of the King Crimson',
