@@ -13,6 +13,7 @@ export class AppComponent {
   PI: number = Math.PI;
   porcentaje: number = 0.357;
   salary:number = 1230.87;
+  date:Date = new Date();
 
   valuePromise = new Promise<string>((resolve) => {
 
