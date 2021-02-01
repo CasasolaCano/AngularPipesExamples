@@ -14,4 +14,14 @@ export class AppComponent {
   porcentaje: number = 0.357;
   salary:number = 1230.87;
 
+  album = {
+    author: 'King Crimson',
+    name: 'In the court of the King Crimson',
+    year: 1969,
+    info: {
+      members: 5,
+      Genre: 'Progressive Rock'
+    }
+  }
+
 }
