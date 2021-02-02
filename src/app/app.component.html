@@ -118,6 +118,17 @@
                     <td>{{date | date:'MMMM-dd'}}</td>
                 </tr>
 
+                <tr>
+                    <td>{{date}}</td>
+                    <td>date:'MMMM-dd' : '' : '{{languague}}'
+                        <br>
+                        <button (click)="changeLanguague('es')" class="mr-1 btn btn-primary">Español</button>
+                        <button (click)="changeLanguague('en')" class="mr-1 btn btn-secondary">Inglés</button>
+                        <button (click)="changeLanguague('fr')" class="mr-1 btn btn-success">Francés</button>
+                    </td>
+                    <td>{{date | date:'MMMM-dd' : '' : languague}}</td>
+                </tr>
+
             </tbody>
 
         </table>

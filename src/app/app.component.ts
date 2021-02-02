@@ -15,6 +15,8 @@ export class AppComponent {
   salary:number = 1230.87;
   date:Date = new Date();
 
+  languague:string = 'fr';
+
   valuePromise = new Promise<string>((resolve) => {
 
     setTimeout(() => {
@@ -31,6 +33,10 @@ export class AppComponent {
       members: 5,
       Genre: 'Progressive Rock'
     }
+  }
+
+  changeLanguague(_languague:string) {
+    this.languague = _languague;
   }
 
 }
