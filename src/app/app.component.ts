@@ -17,6 +17,7 @@ export class AppComponent {
   date:Date = new Date();
 
   languague:string = 'fr';
+  videoUrl:string = "https://www.youtube.com/embed/-C-HytsGYg0";
 
   valuePromise = new Promise<string>((resolve) => {
 
