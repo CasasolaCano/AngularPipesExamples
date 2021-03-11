@@ -15,6 +15,7 @@ export class AppComponent {
   porcentaje: number = 0.357;
   salary:number = 1230.87;
   date:Date = new Date();
+  activate:boolean = true;
 
   languague:string = 'fr';
   videoUrl:string = "https://www.youtube.com/embed/-C-HytsGYg0";
@@ -39,6 +40,10 @@ export class AppComponent {
 
   changeLanguague(_languague:string) {
     this.languague = _languague;
+  }
+
+  changePassword() {
+    this.activate = !this.activate;
   }
 
 }
